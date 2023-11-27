@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-
 const Wrapper = styled.section`
   padding: 9rem 0;
 
@@ -176,8 +175,21 @@ const Wrapper = styled.section`
     }
   }
 `;
-const Cart = () => {
-  return <Wrapper></Wrapper>;
+const Cart: React.FC = () => {
+  return (
+    <Wrapper
+      theme={{
+        colors: {
+          btn: "",
+        },
+        media: {
+          mobile: "",
+        },
+      }}
+    >
+      <h1>sdfadsfasfsd</h1>
+    </Wrapper>
+  );
 };
 
 export default Cart;

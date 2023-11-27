@@ -1,7 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
-const Wrapper = styled.section`
+interface WrapperProps {
+  theme: {
+    colors: {
+      white: string;
+      btn: string;
+    };
+  };
+}
+
+const Wrapper = styled.section<WrapperProps>`
   padding: 9rem 0 5rem 0;
   text-align: center;
 
@@ -33,8 +42,8 @@ const Wrapper = styled.section`
   }
 `;
 
-const Contact = () => {
-  return <Wrapper></Wrapper>;
+const Contact: React.FC = () => {
+  return <Wrapper theme={{ colors: { white: "your_color", btn: "your_color" } }}> DSFSFSSAFSDF</Wrapper>;
 };
 
 export default Contact;
