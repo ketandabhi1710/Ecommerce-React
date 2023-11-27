@@ -1,6 +1,9 @@
+import React from "react";
 import styled from "styled-components";
+interface WrapperProps {
+  // Add any props you might use in your styled component
+}
 
-return <Wrapper></Wrapper>;
 
 const Wrapper = styled.section`
   .container {
@@ -74,5 +77,8 @@ const Wrapper = styled.section`
     padding: 0 2.4rem;
   }
 `;
+const SingleProduct: React.FC = () => {
+  return <Wrapper></Wrapper>;
+};
 
 export default SingleProduct;
